@@ -10,23 +10,7 @@
             "type": "shell",
             "windows": {
                 "command": "${workspaceRoot}/build.cmd",
-                "type": "process" // some people have bash as default in windows
-            },
-            "label": "BuildExperimental",
-            "args": [
-                "ExpRunScript"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "command": "${workspaceRoot}/build.sh",
-            "type": "shell",
-            "windows": {
-                "command": "${workspaceRoot}/build.cmd",
-                "type": "process" // some people have bash as default in windows
+                "type": "process"
             },
             "label": "Build",
             "args": [
@@ -35,14 +19,15 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher": []
         },
         {
             "command": "${workspaceRoot}/build.sh",
             "type": "shell",
             "windows": {
                 "command": "${workspaceRoot}/build.cmd",
-                "type": "process" // some people have bash as default in windows
+                "type": "process"
             },
             "label": "Full Build",
             "args": [
@@ -55,7 +40,7 @@
             "type": "shell",
             "windows": {
                 "command": "${workspaceRoot}/build.cmd",
-                "type": "process" // some people have bash as default in windows
+                "type": "process"
             },
             "label": "Watch",
             "args": [
